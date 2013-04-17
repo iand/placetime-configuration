@@ -5,7 +5,7 @@
 # processname: ptserver
 
 DAEMON="/opt/placetime/ptserver"
-DAEMONOPTS="--assets=/opt/placetime/webapp/assets"
+DAEMONOPTS="--assets=/opt/placetime/webapp"
 
 NAME=ptserver
 LOGFILE="/var/log/placetime/ptserver.log"
