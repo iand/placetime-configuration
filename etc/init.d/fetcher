@@ -19,7 +19,7 @@ test -f $DAEMON || exit 0
 case "$1" in
 start)
 	printf "%-50s" "Starting $NAME..."
-    PID=`$DAEMON $DAEMONOPTS >& $LOGFILE & echo $!`
+    PID=`$DAEMON $DAEMONOPTS >> $LOGFILE 2>&1 & echo $!`
 	#PID=`$DAEMON $DAEMONOPTS > /dev/null 2>&1 & echo $!`
 	#echo "Saving PID" $PID " to " $PIDFILE
         if [ -z $PID ]; then
