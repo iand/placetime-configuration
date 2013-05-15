@@ -21,7 +21,7 @@ width=460
 height=160
 
 [fetcher]
-worker=5
+workers=5
 
 [fetcher.feed]
 interval=1800
